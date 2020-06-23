@@ -19,7 +19,7 @@ plugins: [
   new CleanWebpackPlugin(),
   new Dotenv(),
   new HtmlWebpackPlugin({
-    title: 'template',
+    title: 'sudoku',
     template: './src/index.html',
     inject: 'body'
   })
