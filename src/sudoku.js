@@ -10,6 +10,6 @@ export function Row(input1, input2, input3, input4, input5, input6, input7, inpu
   this.input9 = input9;
 };
 
-Row.prototype.checkRow = function() {
-  
+Row.prototype.rowCheck = function() {
+
 }
