@@ -7,7 +7,7 @@
 
 ## Description
 
-_._
+_This program will check for answers given to a sudoku puzzle to check whether the answers are viable. Using TDD, the program runs tests to create working functions that check and verify answers to the given sudoku puzzle._
 
 ## Setup/Installation Requirements
 
@@ -18,7 +18,7 @@ Open by downloading:
 
 Open via Bash/GitBash:
 1. Clone this repository onto your computer:
-`git clone https://github.com/MPetersen89/Sudoku`
+`git clone https://github.com/MPetersen89/Sudoku-Checker`
 2. Navigate into the `Sudoku` directory in Visual Studio Code or preferred text editor
 `code .`
 3. Open index.html in Chrome or preferred browser:
@@ -35,14 +35,10 @@ _No known bugs_
 
 | Behavior    | Input | Output |
 | :---------- | ----- | -----: |
-| Player 1 | 'click' box | X |
-| Player 2 | 'click' box | O |
-| Start Buton| intializes Game | Brings up game page |
-| Restart | 'click' | game restarts |
-| End turn | 'button' end turn  | player1/player2 turn  |
-| Player 1 | 3 marks in a row | Player 1 wins|
-| Player 2 | 3 marks in a row | Player 2 wins | 
-| No one reaches 3 in a row | filled board no rows of 3 | no winner |
+| Program will ensure each row contains all numbers from 1 to 9 with no repeats | "1, 2, 3, 4, 5, 6, 7, 8, 9" | true |
+| Program will ensure each column contains all numbers from 1 to 9 with no repeats | "1, 2, 3, 4, 5, 6, 7, 8, 9" | true |
+| Program will ensure each of the nine 3x3 grids contain all numbers from 1 to 9 with no repeats | "finished sudoku puzzle" | true
+
 
 
 ## Support and contact details

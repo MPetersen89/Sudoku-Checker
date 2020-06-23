@@ -11,17 +11,14 @@ export function Row(input1, input2, input3, input4, input5, input6, input7, inpu
 }
 
 Row.prototype.rowCheck = function() {
-  let rowArray = [];
-  rowArray.push(this.input1, this.input2, this.input3, this.input4, this.input5, this.input6, this.input7, this.input8, this.input9);
-  
-  for (let i = 0; i < rowArray.length; i++) {
-    for (let j = i + 1; j < rowArray.length; j++) {
-      if (rowArray[i] === (rowArray[j])) {
-        return false;
-      }
-      else {
-        return true;
-      }
-    }
+  //let rowArray = [];
+  //rowArray.push(this.input1, this.input2, this.input3, this.input4, this.input5, this.input6, this.input7, this.input8, this.input9);
+  // console.log(rowArray);
+  debugger;
+  if ((this.input1 !== this.input2) && (this.input2 !== this.input3) && (this.input3 !== this.input4) && (this.input4 !== this.input5) && (this.input5 !== this.input6) && (this.input6 !== this.input7) && (this.input7 !== this.input8) && (this.input8 !== this.input9)) {
+    return true;
+  }
+  else {
+    return false;
   }
 };
