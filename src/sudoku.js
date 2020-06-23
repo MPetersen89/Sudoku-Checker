@@ -11,10 +11,6 @@ export function Row(input1, input2, input3, input4, input5, input6, input7, inpu
 }
 
 Row.prototype.rowCheck = function() {
-  //let rowArray = [];
-  //rowArray.push(this.input1, this.input2, this.input3, this.input4, this.input5, this.input6, this.input7, this.input8, this.input9);
-  // console.log(rowArray);
-  debugger;
   if ((this.input1 !== this.input2) && (this.input2 !== this.input3) && (this.input3 !== this.input4) && (this.input4 !== this.input5) && (this.input5 !== this.input6) && (this.input6 !== this.input7) && (this.input7 !== this.input8) && (this.input8 !== this.input9)) {
     return true;
   }
@@ -35,6 +31,11 @@ export function Column(input1, input2, input3, input4, input5, input6, input7, i
   this.input9 = input9;
 }
 
-// Column.prototype.columnCheck = function() {
-
-// }
+Column.prototype.columnCheck = function() {
+  if ((this.input1 !== this.input2) && (this.input2 !== this.input3) && (this.input3 !== this.input4) && (this.input4 !== this.input5) && (this.input5 !== this.input6) && (this.input6 !== this.input7) && (this.input7 !== this.input8) && (this.input8 !== this.input9)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}

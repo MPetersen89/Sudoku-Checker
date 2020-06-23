@@ -36,4 +36,9 @@ describe('Column', () => {
     expect(column.input8).toEqual(8);
     expect(column.input9).toEqual(9);
   });
+
+  test('should ensure that each column contains all numbers from 1 to 9 with no repeats', () => {
+    const column = new Column(1, 2, 3, 4, 5, 6, 7, 8, 9);
+    expect(column.columnCheck()).toEqual(true);
+  });
 })
